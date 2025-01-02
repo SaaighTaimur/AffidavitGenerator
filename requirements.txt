@@ -1,1 +1,6 @@
 streamlit>=1.26.0
+docx
+docxtpl>=0.19.1
+pycom
+docx2pdf>=0.1.8
+PyPDF2>=1.18
