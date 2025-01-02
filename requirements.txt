@@ -5,3 +5,4 @@ docxtpl==0.16.6
 pypdf2==3.0.0
 docx2pdf==0.1.8
 pillow==9.1.0
+pywin32==308; platform_system == "Windows"
