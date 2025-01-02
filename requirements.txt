@@ -1,6 +1,5 @@
-streamlit>=1.26.0
-docx
-docxtpl>=0.19.1
-pywin32>308
-docx2pdf>=0.1.8
-PyPDF2>=1.18
+streamlit==1.25.0
+python-docx==0.8.11
+docxtpl==0.16.6
+pypdf2==3.0.0
+docx2pdf==0.1.8
