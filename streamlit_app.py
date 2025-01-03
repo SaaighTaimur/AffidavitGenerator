@@ -10,7 +10,7 @@ from PyPDF2 import PdfReader, PdfWriter
 # Configure page settings
 st.set_page_config(
     page_title="Affidavit Generator",
-    page_icon="💸"
+    page_icon="📝"
 )
 
 
@@ -23,7 +23,7 @@ def local_css(file_name):
 local_css("styles/main.css")
 
 
-# Path to your template files
+# Path to template files
 affidavit_template_path = "Affidavit template to change.docx"
 exhibit_template_path = "Exhibit Template.docx"
 part_2_template_path = "Affidavit template to change - Part 2.docx"
@@ -78,7 +78,7 @@ def generate_affidavit_with_exhibits(output_filename):
     affidavit_file_path = "temp_affidavit.docx"
     doc.save(affidavit_file_path)
 
-    # Load the affidavit document again using python-docx for further manipulation
+    # Load the affidavit document again using python-docx
     affidavit_doc = Document(affidavit_file_path)
 
     # Process each exhibit file uploaded by the user
@@ -146,7 +146,7 @@ def generate_affidavit_with_exhibits(output_filename):
         section.top_margin = Inches(1)
         section.bottom_margin = Inches(1)
 
-    # Save the final document with affidavit, exhibits, and part 2
+    # Save the final document with affidavit, exhibits, and part 2 of the affidavit
     affidavit_doc.save(output_filename)
 
 # Word file generation
